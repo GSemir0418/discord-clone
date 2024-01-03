@@ -2,6 +2,7 @@ import React from 'react'
 import { redirect } from 'next/navigation'
 import { initialProfile } from '@/lib/initial-profile'
 import { db } from '@/lib/db'
+import { InitialModal } from '@/components/modals/initial-modal'
 
 interface Props { }
 const SetupPage: React.FC<Props> = async () => {
@@ -20,7 +21,7 @@ const SetupPage: React.FC<Props> = async () => {
 
   if (server)
     redirect(`/servers/${server.id}`)
-  return <div>Create a Server</div>
+  return <InitialModal />
 }
 
 export default SetupPage
