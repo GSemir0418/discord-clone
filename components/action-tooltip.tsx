@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import React from 'react'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 
@@ -12,7 +12,7 @@ export const ActionTooltip: React.FC<Props> = ({
   label,
   children,
   side,
-  align
+  align,
 }) => {
   return (
     <TooltipProvider>
@@ -21,7 +21,7 @@ export const ActionTooltip: React.FC<Props> = ({
           {children}
         </TooltipTrigger>
         <TooltipContent side={side} align={align}>
-          <p className='font-semibold text-sm capitalize'>
+          <p className="font-semibold text-sm capitalize">
             {label.toLowerCase()}
           </p>
         </TooltipContent>

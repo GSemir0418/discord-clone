@@ -25,7 +25,7 @@ export async function PATCH(
         inviteCode: v4(),
       },
     })
-    
+
     return NextResponse.json(server)
   }
   catch (error) {

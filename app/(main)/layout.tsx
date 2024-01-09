@@ -1,4 +1,4 @@
-import { NavigationSidebar } from "@/components/navigation/navigation-sidebar"
+import { NavigationSidebar } from '@/components/navigation/navigation-sidebar'
 
 async function MainLayout({ children }: { children: React.ReactNode }) {
   return (
