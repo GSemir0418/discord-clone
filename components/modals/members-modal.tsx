@@ -85,6 +85,7 @@ export function MembersModal() {
             className="text-center text-zinc-500"
           >
             {server?.members?.length}
+            {' '}
             Members
           </DialogDescription>
         </DialogHeader>
