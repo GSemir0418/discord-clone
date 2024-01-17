@@ -40,5 +40,6 @@
     "yaml",
     "toml"
   ],
-  "files.autoSave": "onFocusChange"
+  "files.autoSave": "onFocusChange",
+  "explorer.compactFolders": false
 }
