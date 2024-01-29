@@ -1,7 +1,8 @@
 import { Hash } from 'lucide-react'
 import React from 'react'
-import { MobileToggle } from '@/components/mobile-toggle'
 import { UserAvatar } from '../user-avatar'
+import { SocketIndicator } from '../socket-indicator'
+import { MobileToggle } from '@/components/mobile-toggle'
 
 interface Props {
   serverId: string
@@ -24,12 +25,15 @@ export const ChatHeader: React.FC<Props> = ({
       {type === 'conversation' && (
         <UserAvatar
           src={imageUrl}
-          className='h-8 w-8 md:h-8 md:w-8 mr-2'
+          className="h-8 w-8 md:h-8 md:w-8 mr-2"
         />
       )}
       <p className="font-semibold text-md text-black dark:text-white">
         {name}
       </p>
+      <div className="ml-auto flex items-center">
+        <SocketIndicator />
+      </div>
     </div>
   )
 }
