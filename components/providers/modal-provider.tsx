@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { MessageFileModal } from '@/components/modals/message-file-modal'
 import { EditServerModal } from '@/components/modals/edit-server-modal'
 import { CreateServerModal } from '@/components/modals/create-server-modal'
 import { InviteModal } from '@/components/modals/invite-modal'
@@ -32,6 +33,7 @@ export function ModalProvider() {
       <DeleteServerModal />
       <DeleteChannelModal />
       <EditChannelModal />
+      <MessageFileModal />
     </>
   )
 }
