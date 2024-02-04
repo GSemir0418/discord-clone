@@ -4,5 +4,6 @@ export default antfu({
   rules: {
     'no-console': 'off',
     'n/prefer-global/process': 'off',
+    'no-useless-return': 'off',
   },
 })
