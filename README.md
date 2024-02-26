@@ -1406,4 +1406,4 @@ docker run -p 3000:3000 -d $container_name
 
 - 浏览器不允许 http 站点访问用户的摄像头、麦克风等权限，导致项目的视频语音通话功能无法实现。此时需要访问 `chrome://flags`，将 `Insecure origins treated as secure` 选项启动，并输入我们的 http 站点即可
 
-![image-20240219094903262](./md/image-20240219094903262.png)
+![image-20240219094903262](/md/image-20240219094903262.png)
